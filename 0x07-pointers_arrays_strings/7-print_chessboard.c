@@ -13,7 +13,7 @@
 		int k;
 		int j;
 
-		for (a = 0; a < 8; a++)
+		for (k = 0; k < 8; k++)
 		{
 			for (j = 0 ; j < 8 ; j++)
 
