@@ -1,29 +1,33 @@
 #include "main.h"
+
+int root_sqrt_recursion(int n, int i);
+
 /**
  * _sqrt_recursion - returns the natural square root of a number
- * @n: the number to calculate its square
+ * @n: number to calculate it's square root
  *
- * Return: the result of a square
+ * Return: the resultat of the  square root
  */
-
 int _sqrt_recursion(int n)
 {
-	return (square(n, 1));
+	if (n < 0)
+		return (-1);
+	return (root_sqrt_recursion(n, 0));
 }
 
 /**
- * square - find the root of the square
- * @n: number to  sqaure root
- * @i: square root
+ * actual_sqrt_recursion - recurses to find the natural
+ * square root
+ * @n: number to calculate the square of the root
+ * @i: the square agent
  *
- * Return: the square root
+ * Return: the resulting square root
  */
-
-int square(int n, int i)
+int root_sqrt_recursion(int n, int i)
 {
+	if (i * i > n)
+		return (-1);
 	if (i * i == n)
 		return (i);
-	if (i * i < n)
-		return (square(n, i + 1));
-	return (-1);
+	return (root_sqrt_recursion(n, i + 1));
 }
