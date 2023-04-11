@@ -18,7 +18,7 @@
 
 		if (argc != 3)
 	{
-		printf("the program accept only two arguments \n");
+		printf("Error\n");
 		return (1);
 	}
 
