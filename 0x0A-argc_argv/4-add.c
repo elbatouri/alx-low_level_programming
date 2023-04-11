@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 #include <ctype.h>
-
+#include <stdlib.h>
 /**
  * main - add two numbers and print the result.
  * @argv: the arguments of the array.
