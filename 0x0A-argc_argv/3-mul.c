@@ -10,19 +10,17 @@
  * Return: 0( succes)
  */
 
-	int main(int argc, char *argv[])
+int main(int argc, char *argv[])
+{
+	if (argc == 3)
 	{
 		int n1 = atoi(argv[1]);
 		int n2 = atoi(argv[2]);
 		int result = n1 * n2;
 
-		if (argc != 3)
-	{
-		printf("Error\n");
-		return (1);
-	}
-
 		printf("%d\n", result);
-
 		return (0);
 	}
+		printf("Error\n");
+		return (1);
+}
