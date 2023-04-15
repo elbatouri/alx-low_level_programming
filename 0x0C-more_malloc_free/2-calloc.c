@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 #include <stdlib.h>
 
 /**
@@ -35,11 +34,11 @@
 
 		if (size == 0 || nmemb == 0)
 			return (NULL);
-		pm = malloc(sizeof(int) * nmemb);
+		pm = malloc(size * nmemb);
 
 		if (pm == NULL)
 			return (NULL);
-		_memset(pm, 0, sizeof(int) * nmemb);
+		_memset(pm, 0, size * nmemb);
 
 		return (pm);
 }
