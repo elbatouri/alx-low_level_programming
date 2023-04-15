@@ -4,10 +4,10 @@
 
 /**
  * _memset - fils the memory with a constant
- * @s: pointer to constant
- * @b: the constant
- * @n: max bytes to use
- * Return: the memory filled
+ * @s: memory to be filled
+ * @b: the character to coppy.
+ * @n: the bytes to copy
+ * Return: pointer to the memory filled
  */
 
 	char *_memset(char *s, char b, unsigned int n)
@@ -22,9 +22,9 @@
 
 /**
  * _calloc - allocates memory for an array
- *@nmemb: the length of the array
+ *@nmemb: the array elements
  *@size: the size of the ellements
- *Return: the pointer
+ *Return: the pointer to the memory allocated.
  */
 
 	void *_calloc(unsigned int nmemb, unsigned int size)
