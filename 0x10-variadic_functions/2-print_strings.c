@@ -20,7 +20,7 @@
 		{
 			s = va_arg(list, char *);
 			if (!s)
-				s = "null";
+				s = "nil";
 			if (!separator)
 				printf("%s", s);
 			else if (separator && i == 0)
