@@ -31,7 +31,7 @@
 			case 's':
 				str = va_arg(list, char *);
 				if (!str)
-					str = "(null)";
+					str = "(nil)";
 				printf("%s%s", sep, str);
 				break;
 			default:
@@ -42,4 +42,6 @@
 		i++;
 		}
 	}
+		printf("\n");
+		va_end(list);
 	}
