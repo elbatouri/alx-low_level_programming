@@ -13,7 +13,7 @@
 		char *s;
 
 		va_list list;
-		
+
 		va_start(list, n);
 
 		for (i = 0; i < n; i++)
