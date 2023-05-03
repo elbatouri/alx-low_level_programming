@@ -6,6 +6,8 @@
 /**
  * sum_listint - the sum of all the data (n) of a linked lists
  * @head : the fist node of the linked list
+ *
+ * Return: the sum of numb in two linked list
  */
 
 int sum_listint(listint_t *head)
