@@ -1,1 +1,1 @@
-this is a readme for bit manupilation project
+0x14-bit_manipulation
