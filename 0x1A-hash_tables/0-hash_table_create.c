@@ -5,7 +5,7 @@
  * @size: the array's size
  *
  * Return: error case - NULL
-sh: 1: q: not found
+ * 	otherwise - pointer to new hash table.
  */
 
 hash_table_t *hash_table_create(unsigned long int size)
@@ -18,7 +18,7 @@ hash_table_t *hash_table_create(unsigned long int size)
 		return (NULL);
 
 	sht->size = size;
-	sht->array = malloc(sizeof(hash_node_t*) * size);
+	sht->array = malloc(sizeof(hash_node_t *) * size);
 	if (sht->array == NULL)
 		return (NULL);
 	for (i = 0; i < size; i++)
